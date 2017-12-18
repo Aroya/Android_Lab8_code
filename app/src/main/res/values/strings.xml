@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab8_Code</string>
+    <string name="add_item">增加条目</string>
+    <string name="add">增加</string>
+    <string name="name">姓名</string>
+    <string name="birthday">生日</string>
+    <string name="gift">礼物</string>
+    <string name="nameE">姓名:</string>
+    <string name="birthdayE">生日:</string>
+    <string name="giftE">礼物:</string>
+    <string name="blankToast">为空，请完善</string>
+</resources>

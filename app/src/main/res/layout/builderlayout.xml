@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/builder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nameE"
+        android:textSize="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/builder_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birthdayE"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@id/builder_name"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/builder_name"/>
+
+    <TextView
+        android:id="@+id/builder_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/giftE"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@id/builder_birthday"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/builder_name"/>
+
+    <TextView
+        android:id="@+id/builder_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话:"
+        android:textSize="16dp"
+        android:textColor="@color/bottonGreen"
+        app:layout_constraintTop_toBottomOf="@id/builder_gift"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/builder_name"/>
+
+    <TextView
+        android:id="@+id/builder_nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/builder_name"
+        app:layout_constraintBottom_toBottomOf="@id/builder_name"
+        app:layout_constraintLeft_toRightOf="@id/builder_name"/>
+    <EditText
+        android:id="@+id/builder_birthdayEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toTopOf="@id/builder_birthday"
+        app:layout_constraintBottom_toBottomOf="@id/builder_birthday"
+        app:layout_constraintLeft_toRightOf="@id/builder_birthday"/>
+
+    <EditText
+        android:id="@+id/builder_giftEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toTopOf="@id/builder_gift"
+        app:layout_constraintBottom_toBottomOf="@id/builder_gift"
+        app:layout_constraintLeft_toRightOf="@id/builder_gift"/>
+
+    <TextView
+        android:id="@+id/builder_phonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/bottonGreen"
+        app:layout_constraintTop_toTopOf="@id/builder_phone"
+        app:layout_constraintBottom_toBottomOf="@id/builder_phone"
+        app:layout_constraintLeft_toRightOf="@id/builder_phone"/>
+
+</android.support.constraint.ConstraintLayout>

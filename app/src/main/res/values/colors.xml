@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bottonGreen">#0C5</color>
+    <color name="pureWhite">#FFF</color>
+    <color name="pureBlack">#000</color>
+    <color name="grayA">#aaa</color>
+    <color name="grayB">#bbb</color>
+    <color name="grayC">#ccc</color>
+</resources>
