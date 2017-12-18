@@ -125,7 +125,6 @@ public class Lab8_code extends AppCompatActivity {
                 implements View.OnClickListener,View.OnLongClickListener{
             public TextView item_name,item_birthday,item_gift;
 
-
             public ViewHolder(View view){
                 super(view);
                 item_name=(TextView)view.findViewById(R.id.item_name);
@@ -152,14 +151,8 @@ public class Lab8_code extends AppCompatActivity {
                 thisBirth.setText(dataBase.get(getPosition()).get("birthday"));
                 thisGift.setText(dataBase.get(getPosition()).get("gift"));
 
-
-                //电话
-                //Cursor cursor = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
-
-                //int isHas = Integer.parseInt(cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER)));
                 //检查权限
                 requestContact();
-
 
                 Cursor phone = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI,null,null,null,null);
                 String Number = "";
@@ -327,7 +320,6 @@ public class Lab8_code extends AppCompatActivity {
                             new String[]{android.Manifest.permission.READ_CONTACTS},
                             0);
                 }
-
             }
         }
         catch (Exception e){
