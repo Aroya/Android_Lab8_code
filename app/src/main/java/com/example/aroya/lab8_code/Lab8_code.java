@@ -48,6 +48,8 @@ public class Lab8_code extends AppCompatActivity {
         dataBase=new ArrayList<>();
         loadDatas();
         loadMain();
+
+        requestContact();
     }
 
     private void loadMain(){
@@ -150,9 +152,6 @@ public class Lab8_code extends AppCompatActivity {
                 thisName.setText(dataBase.get(getPosition()).get("name"));
                 thisBirth.setText(dataBase.get(getPosition()).get("birthday"));
                 thisGift.setText(dataBase.get(getPosition()).get("gift"));
-
-                //检查权限
-                requestContact();
 
                 Cursor phone = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI,null,null,null,null);
                 String Number = "";
